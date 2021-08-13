@@ -10,7 +10,7 @@ var block8, block9, block10, block11, block12, block13, block14;
 var block15, block16, block17, block18, block19, block20, block21, block22;
 
 var ground1, ground2, ground3;
-
+var sling;
 var chain;
 var hex;
 var ball;
@@ -161,9 +161,7 @@ function mouseReleased() {
 
 function keyPressed() {
 
-	if(keyCode === 32) {
-		Matter.Body.setPosition(hex.body, {x:85, y:200})
-		chain.attach(hex.body);
+	
 		
 		function keyPressed() {
   if (keyCode === 32) {
