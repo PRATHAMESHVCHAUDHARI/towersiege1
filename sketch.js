@@ -164,6 +164,11 @@ function keyPressed() {
 	if(keyCode === 32) {
 		Matter.Body.setPosition(hex.body, {x:85, y:200})
 		chain.attach(hex.body);
+		
+		function keyPressed() {
+  if (keyCode === 32) {
+    sling.attach(ball.body);
+  
   }
   
 }
