@@ -24,6 +24,13 @@ class Block {
         rectMode(CENTER);
         rect(0, 0, this.width, this.height);
         pop();
+          } else {
+            push();
+            World.remove(world, this.body);
+            this.visibility = this.visibility - 1;
+            tint(255, this.visibility);
+            pop();
+        }
 
       }
       
